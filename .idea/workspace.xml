@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookRoom.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/CreateAccount.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/CreateAccount.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/DisplayAccountInformation.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/DisplayAccountInformation.md" afterDir="false" />
-    </list>
+    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="Book room usecase added" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,11 +73,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1729764117183</updated>
-      <workItem from="1729791469490" duration="383000" />
+      <workItem from="1729791469490" duration="1942000" />
     </task>
+    <task id="LOCAL-00001" summary="Book room usecase added">
+      <option name="closed" value="true" />
+      <created>1729793398525</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1729793398525</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Book room usecase added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Book room usecase added" />
   </component>
 </project>

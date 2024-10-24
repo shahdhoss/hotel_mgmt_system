@@ -31,13 +31,12 @@
 ### Alternate Scenarios:
     3a. The user enters an invalid phone number.
         - System Action: The system displays an error message prompting the user to enter a valid phone number.
-        - Resolution: The user corrects the phone number and resubmits.
     3b. The user leaves one or more required fields blank.
         - System Action: The system highlights the missing fields and prompts the user to fill them in.
         - Resolution: The user completes all required fields and resubmits.
     5e.The system returns "No matching rooms found"
         System Action: The system displays all the available rooms for the customer.
         Resolution: The user either chooses a room or declines booking
-    2f.The system encounters an issue (e.g., runtime error or thown exceptions) during room booking.
+    8a.The system encounters an issue (e.g., runtime error or thown exceptions) during room booking.
         System Action: The system notifies the user of the issue and asks them to try again later.
         Resolution: The user retries after the system issue is resolved.
