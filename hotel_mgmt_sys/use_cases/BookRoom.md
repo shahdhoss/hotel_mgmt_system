@@ -2,7 +2,7 @@
     Book Room
 
 ### Actors:
-    Customers
+    Guests
 ### Stakeholders:
     Staff Members (Reception)
 ### Pre-conditions:
