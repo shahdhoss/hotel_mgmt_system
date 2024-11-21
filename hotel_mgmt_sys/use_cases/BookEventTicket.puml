@@ -1,0 +1,36 @@
+@startuml
+left to right direction
+actor Guest as guest
+actor "POS System" as pos
+
+rectangle "Event Booking System" {
+    usecase "Visit 'Hotel Events' Page" as UC1
+    usecase "View List of Events" as UC2
+    usecase "Choose an Event" as UC3
+    usecase "Buy Ticket" as UC4
+    usecase "Provide Ticket Details and Payment" as UC5
+    usecase "Confirm Ticket Booking" as UC6
+    usecase "Handle Missing Fields" as UC7
+    usecase "Display Available Events" as UC8
+    usecase "Handle Payment Issues" as UC9
+}
+
+guest --> UC1
+guest --> UC2
+guest --> UC3
+guest --> UC4
+guest --> UC5
+guest --> UC6
+guest --> UC7
+guest --> UC8
+guest --> UC9
+
+UC2 --> UC3
+UC3 --> UC4
+UC4 --> UC5
+UC5 -right-> pos : "Send Payment Request"
+pos -left-> UC6 : "Payment Confirmation"
+UC5 --> UC7 : <<alternate>>
+UC3 --> UC8 : <<alternate>>
+UC5 --> UC9 : <<error>>
+@enduml
