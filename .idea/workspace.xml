@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="buy an event ticket usecase">
-      <change afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookRoom.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookRoom.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookRoom.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/requirements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +49,7 @@
   "keyToString": {
     "DefaultPlantUmlFileTemplate": "UML Use Case",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "F:/hotel_mgmt_sys",
