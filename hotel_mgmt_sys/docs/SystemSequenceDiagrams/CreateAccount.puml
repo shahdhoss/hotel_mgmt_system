@@ -1,0 +1,16 @@
+@startuml
+title Create Account SSD
+actor User as user
+participant System as system
+
+user -> system: CreateAccount(Email, Password, Confirm Password)
+system -> system: ValidateEmailFormat()
+system -> system: ValidatePasswordMatch()
+system -> system: ValidatePasswordStrength()
+alt Valid Data
+    system -> system: CreateAccountInDatabase()
+    system -> user: DisplaySuccessMessage()
+else Invalid Data
+    system -> user: DisplayErrorMessage("Invalid data")
+end
+@enduml

@@ -23,11 +23,7 @@
             Personal information (name, email, employment start date).
             Paycheck information, including the paycheck amount, issue date, and a history of past paychecks.
             Employment details (start date and dismissal date, if applicable).
-        c. For Managers:
-            The system displays:
-            Personal, paycheck information and employment details.
-            A list of staff members under their management, including their employment details and paycheck history for each staff member.
-            (not sure if this belongs here yet)Employee performance reports, including attendance records, task completion, and customer feedback.
+        
 ### Alternate Scenarios:
     1a. A newly hired staff member views their account before receiving any paychecks.
         System Action: The system displays a message indicating no paycheck records are available.

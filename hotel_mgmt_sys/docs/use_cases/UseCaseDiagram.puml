@@ -13,6 +13,7 @@ rectangle "System" as main_system {
         usecase "Login" as uc2
         usecase "Logout" as uc3
         usecase "Forgot Password" as uc4
+        usecase "Display Account Information" as uc17
     }
 
     rectangle "Staff Features" {
@@ -39,6 +40,7 @@ User --> uc1
 User --> uc2
 User --> uc3
 User --> uc4
+User --> uc17
 
 staff --> uc5
 staff--> uc6

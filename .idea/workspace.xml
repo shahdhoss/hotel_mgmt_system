@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="buy an event ticket usecase">
+      <change afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SystemSequenceDiagrams/CreateAccount.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/project_proposal.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/ProjectProposal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/Requirements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/DisplayAccountInformation.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/DisplayAccountInformation.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/UseCaseDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/UseCaseDiagram.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
