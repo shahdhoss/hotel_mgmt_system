@@ -1,0 +1,70 @@
+@startuml
+left to right direction
+
+actor Guest as guest
+actor Manager as manager
+actor "Staff Member" as staff
+
+User <|-- guest
+User <|-- manager
+User <|-- staff
+
+Employee <|-- staff
+Employee <|-- manager
+
+rectangle "System" as main_system {
+    rectangle "User Features" {
+        usecase "Create Account" as uc1
+        usecase "Login" as uc2
+        usecase "Logout" as uc3
+        usecase "Forgot Password" as uc4
+    }
+
+    rectangle "Staff Features" {
+        usecase "View Paycheck History" as uc5
+        usecase "View Employment Status" as uc6
+        usecase "Manage Room Reservations" as uc7
+    }
+
+    rectangle "Manager Features" {
+        usecase "Issue Paychecks" as uc8
+        usecase "Manage Staff Time-off Requests" as uc9
+        usecase "Manage Staff Members Access" as uc10
+        usecase "View Performance Reports" as uc11
+    }
+
+    rectangle "Guest Features" {
+        usecase "Check Room Availability" as uc12
+        usecase "Book A Room" as uc13
+        usecase "Request Housekeeping Service" as uc14
+        usecase "Make A Payment" as uc15
+        usecase "Book Event Ticket" as uc16
+    }
+}
+
+rectangle "Payment Processing System" as pps {
+    usecase "Process Payment" as uc_payment
+}
+
+User --> uc1
+User --> uc2
+User --> uc3
+User --> uc4
+
+Employee --> uc5
+Employee --> uc6
+staff --> uc7
+
+manager --> uc8
+manager --> uc9
+manager --> uc10
+manager --> uc11
+
+guest --> uc12
+guest --> uc13
+guest --> uc14
+guest --> uc15
+guest --> uc16
+
+uc15 --> uc_payment
+@enduml
