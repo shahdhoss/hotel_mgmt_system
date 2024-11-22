@@ -1,0 +1,74 @@
+@startuml
+class Hotel {
+    + hotelID: Integer
+    + name: String
+    + location: String
+    + contactInfo: String
+}
+
+class Guest {
+    + guestID: Integer
+    + name: String
+    + email: String
+    + phone: String
+}
+
+class Staff {
+    + staffID: Integer
+    + name: String
+    + role: String
+    + salary: Float
+    + startDate: Date
+    + endDate: Date
+}
+
+class Manager {
+    + managerID: Integer
+    + name: String
+}
+
+class Room {
+    + roomID: Integer
+    + type: String
+    + status: String
+    + ratePerNight: Float
+}
+
+class Payment {
+    + paymentID: Integer
+    + amount: Float
+    + method: String
+}
+
+class Event {
+    + eventID: Integer
+    + name: String
+    + date: Date
+    + ticketPrice: Float
+}
+
+class Admin {
+    + adminID: Integer
+    + name: String
+}
+
+class Service {
+    + serviceID: Integer
+    + type: String
+}
+
+Hotel "1" -- "0..*" Room : "owns"
+Hotel "1" -- "0..*" Event : "hosts"
+Hotel "1" -- "0..*" Staff : "employs"
+Hotel "1" -- "0..*" Service : "provides"
+Guest "1" -- "0..*" Room : "books"
+Guest "1" -- "0..*" Payment : "makes"
+Guest "1" -- "0..*" Event : "books ticket"
+Guest "1" -- "0..*" Service : "requests"
+Staff "1" -- "0..*" Room : "manages"
+Manager "1" -- "0..*" Staff : "assigns roles"
+Manager "1" -- "0..*" Payment : "issues paychecks"
+Admin "1" -- "0..*" Staff : "manages data"
+Room "0..*" -- "0..*" Payment : "associated with"
+
+@enduml
