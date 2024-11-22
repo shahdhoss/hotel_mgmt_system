@@ -22,11 +22,6 @@ class Staff {
     + endDate: Date
 }
 
-class Manager {
-    + managerID: Integer
-    + name: String
-}
-
 class Room {
     + roomID: Integer
     + type: String
@@ -47,28 +42,24 @@ class Event {
     + ticketPrice: Float
 }
 
-class Admin {
-    + adminID: Integer
-    + name: String
-}
-
 class Service {
     + serviceID: Integer
     + type: String
+    + description: String
 }
 
-Hotel "1" -- "0..*" Room : "owns"
+Hotel "1" -- "1..*" Room : "owns"
 Hotel "1" -- "0..*" Event : "hosts"
 Hotel "1" -- "0..*" Staff : "employs"
 Hotel "1" -- "0..*" Service : "provides"
+
 Guest "1" -- "0..*" Room : "books"
 Guest "1" -- "0..*" Payment : "makes"
 Guest "1" -- "0..*" Event : "books ticket"
 Guest "1" -- "0..*" Service : "requests"
-Staff "1" -- "0..*" Room : "manages"
-Manager "1" -- "0..*" Staff : "assigns roles"
-Manager "1" -- "0..*" Payment : "issues paychecks"
-Admin "1" -- "0..*" Staff : "manages data"
-Room "0..*" -- "0..*" Payment : "associated with"
 
+Staff "1" -- "0..*" Room : "manages"
+Staff "1" -- "0..*" Payment : "views paycheck"
+
+Room "0..*" -- "0..*" Payment : "associated with"
 @enduml
