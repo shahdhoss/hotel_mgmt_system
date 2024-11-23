@@ -3,11 +3,10 @@
 
 ### Actors:
     Staff Members
-    Supervisors
-    Managers
     Customers
 ### Stakeholders:
     Hotel Management
+    Staff Members
     Customers
 ### Pre-conditions:
     The user must be on the "Create Account" page of the system.

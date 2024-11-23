@@ -5,8 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="updated domail model">
-      <change afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SystemSequenceDiagrams/BookRoom.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/ProjectProposal.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/ProjectProposal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SystemSequenceDiagrams/BookRoom.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/system_sequence_diagrams/BookRoom.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SystemSequenceDiagrams/CreateAccount.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/system_sequence_diagrams/CreateAccount.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/domain_model/domain_model.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/domain_model/domain_model.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/BookEventTicket.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookEventTicket.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/BookEventTicket.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookEventTicket.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/BookRoom.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookRoom.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/BookRoom.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookRoom.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/CreateAccount.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/CreateAccount.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/DisplayAccountInformation.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/DisplayAccountInformation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/UseCaseDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/UseCaseDiagram.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,32 +55,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultPlantUmlFileTemplate": "UML Sequence",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/hotel_mgmt_sys",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Sequence&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/hotel_mgmt_sys&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\SRS" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\requirements" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys" />
       <recent name="C:\Users\malak\IdeaProjects\hotel_mgmt_system\hotel_mgmt_sys" />
-      <recent name="C:\Users\malak\IdeaProjects\hotel_mgmt_system\hotel_mgmt_sys\.idea" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

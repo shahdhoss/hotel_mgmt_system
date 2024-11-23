@@ -2,7 +2,6 @@
     Display Account Information
 ### Actors:
     Staff Members
-    Managers
     Customers
 ### Stakeholders:
     Hotel Management

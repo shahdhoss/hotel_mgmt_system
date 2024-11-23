@@ -13,4 +13,8 @@ alt Valid Data
 else Invalid Data
     system -> user: DisplayErrorMessage("Invalid data")
 end
+alt System/Connection Issues
+    system -> user: DisplayErrorMessage()
+    user -> system: Retry Booking
+end
 @enduml

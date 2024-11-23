@@ -3,9 +3,15 @@ left to right direction
 
 actor Guest as guest
 actor "Staff Member" as staff
+actor "Housekeeping Staff" as housekeeping
+actor "Manager" as manager
+actor "Receptionist" as receptionist
 
 User <|-- guest
 User <|-- staff
+housekeeping<|--staff
+manager <|-- staff
+receptionist <|-- staff
 
 rectangle "System" as main_system {
     rectangle "User Features" {
@@ -44,7 +50,7 @@ User --> uc17
 
 staff --> uc5
 staff--> uc6
-staff --> uc7
+receptionist --> uc7
 
 guest --> uc12
 guest --> uc13

@@ -18,9 +18,9 @@
     to ensure an overall pleasant experience,
     and increase operational efficiency.
 ###  Intended Audience
-    This project has two types of users, hotel customers 
+    This project has two types of users, hotel customers(guests) 
     that prioritize features like easy payment processing,
-    quick and responsive reservation system as well as hotel administrators
+    quick and responsive reservation system as well as hotel administrators(staff)
     focusing more on managing the hotel vacancies.
 ###  Intended Use
     This product is designed to attract users to the hotel by offering services 
