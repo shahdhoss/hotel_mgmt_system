@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="updated domail model">
-      <change afterPath="$PROJECT_DIR$/hotel_mgmt_sys/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/ProjectProposal.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/ProjectProposal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/Requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/Requirements.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/domain_model/domain_model.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/domain_model/domain_model.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/system_sequence_diagrams/BookRoom.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/system_sequence_diagrams/BookRoom.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/system_sequence_diagrams/CreateAccount.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/system_sequence_diagrams/CreateAccount.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookEventTicket.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookEventTicket.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookEventTicket.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookEventTicket.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookRoom.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookRoom.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookRoom.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookRoom.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/CreateAccount.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/CreateAccount.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/DisplayAccountInformation.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/DisplayAccountInformation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/UseCaseDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/UseCaseDiagram.puml" afterDir="false" />
-    </list>
+    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="updated domail model" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -78,11 +63,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\hotel_mgmt_sys" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\SRS" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\requirements" />
-      <recent name="C:\Users\malak\IdeaProjects\hotel_mgmt_system\hotel_mgmt_sys" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
