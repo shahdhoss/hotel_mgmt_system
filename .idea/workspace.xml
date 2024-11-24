@@ -5,18 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="updated domail model">
+      <change afterPath="$PROJECT_DIR$/hotel_mgmt_sys/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/ProjectProposal.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/ProjectProposal.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SystemSequenceDiagrams/BookRoom.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/system_sequence_diagrams/BookRoom.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SystemSequenceDiagrams/CreateAccount.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/system_sequence_diagrams/CreateAccount.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/domain_model/domain_model.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/domain_model/domain_model.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/BookEventTicket.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookEventTicket.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/BookEventTicket.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookEventTicket.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/BookRoom.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookRoom.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/BookRoom.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookRoom.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/CreateAccount.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/CreateAccount.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/DisplayAccountInformation.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/DisplayAccountInformation.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/use_cases/UseCaseDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/UseCaseDiagram.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/ProjectProposal.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/ProjectProposal.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/Requirements.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/docs/Requirements.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/domain_model/domain_model.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/domain_model/domain_model.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/system_sequence_diagrams/BookRoom.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/system_sequence_diagrams/BookRoom.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/system_sequence_diagrams/CreateAccount.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/system_sequence_diagrams/CreateAccount.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookEventTicket.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookEventTicket.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookEventTicket.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookEventTicket.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookRoom.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookRoom.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/BookRoom.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/BookRoom.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/CreateAccount.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/CreateAccount.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/DisplayAccountInformation.md" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/DisplayAccountInformation.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/docs/SRS/use_cases/UseCaseDiagram.puml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/use_cases/UseCaseDiagram.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +64,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/hotel_mgmt_sys&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Downloads&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -76,10 +78,10 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\SRS" />
-      <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\requirements" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys" />
+      <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\SRS" />
+      <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\requirements" />
       <recent name="C:\Users\malak\IdeaProjects\hotel_mgmt_system\hotel_mgmt_sys" />
     </key>
   </component>
