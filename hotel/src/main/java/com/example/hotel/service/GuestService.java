@@ -1,23 +1,31 @@
 package com.example.hotel.service;
+
+import com.example.hotel.dto.GuestDto;
+import com.example.hotel.dto.UserDto;
 import com.example.hotel.entity.Guest;
 import com.example.hotel.entity.GuestRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
-public class GuestService {
+public class GuestService implements UserService {
+
     private final GuestRepository guestRepository;
 
+    @Autowired
     public GuestService(GuestRepository guestRepository){
         this.guestRepository=guestRepository;
     }
 
-    public void saveGuest() {
-        Guest guest = new Guest("shahd@gmail.com", "shahd", "hossam", "shahdd");
-        guestRepository.save(guest);  // This calls the repository to persist the entity
+    public void saveUser(UserDto userDto) {
+        if (userDto instanceof GuestDto guestDto) {
+            Guest guest = new Guest();
+            guest.setFirstName(guestDto.getFirstName());
+            guest.setLastName(guestDto.getLastName());
+            guest.setEmailAddress(guestDto.getEmailAddress());
+            guest.setPassword(guestDto.getPassword());
+            guestRepository.save(guest);
+        }
     }
-    public List<Guest> getGuests(){
-        return guestRepository.findAll();
-    }
+
 }

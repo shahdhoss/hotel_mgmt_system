@@ -1,6 +1,5 @@
 package com.example.hotel.entity;
 
-import com.example.hotel.service.GuestService;
 import jakarta.persistence.*;
 
 @Entity

@@ -1,30 +1,21 @@
 package com.example.hotel.entity;
 
 import jakarta.persistence.*;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name="staff")
-public class Staff {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+public class Staff extends User{
+
     @Column(nullable = false)
     private Long NationalId;
-    @Column(nullable = false)
-    private String emailAddress;
-    @Column(nullable = false)
-    private String firstName;
-    @Column(nullable = false)
-    private String lastName;
     @Column(nullable = false)
     private String jobTitle;
     private LocalDate startDay;
     private LocalDate lastWorkingDay;
-    @Column(nullable = false)
-    private String password;
 
     @OneToMany(mappedBy = "staff", cascade = CascadeType.ALL)
     List<Paycheck> paycheckList= new ArrayList<>();

@@ -5,11 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="updated domail model">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hotel_mgmt_sys.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hotel_mgmt_sys.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/RedirectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/GuestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel_mgmt_sys/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/hotel_mgmt_sys/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/GuestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/GuestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/testcontroller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Guest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/RoomAmenityId.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/RoomAmenityId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Staff.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/GuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/GuestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/amenities.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/amenities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +42,7 @@
       <list>
         <option value="UML Use Case" />
         <option value="UML Sequence" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -50,12 +72,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.HotelApplication.executor": "Run",
     "DefaultPlantUmlFileTemplate": "UML Sequence",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/hotel_mgmt_sys",
+    "last_opened_file_path": "F:/hotel_mgmt_sys/hotel/src/main/java/com/example/hotel",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -69,12 +93,16 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\hotel_mgmt_sys\hotel\src\main\java\com\example\hotel" />
+      <recent name="F:\hotel_mgmt_sys\hotel\src\main\resources\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\hotel_mgmt_sys\hotel\src\main\resources\templates" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs" />
       <recent name="F:\hotel_mgmt_sys" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\SRS" />
-      <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\requirements" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

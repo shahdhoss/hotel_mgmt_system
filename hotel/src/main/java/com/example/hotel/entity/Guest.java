@@ -1,23 +1,16 @@
 package com.example.hotel.entity;
-import jakarta.persistence.*;
+
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
+import jakarta.persistence.Table;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "guest")
-public class Guest {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @Column(nullable = false)
-    private String firstName;
-    @Column(nullable = false)
-    private String lastName;
-    @Column(nullable = false)
-    private String emailAddress;
-    @Column(nullable = false)
-    private String password;
+public class Guest extends User{
 
     @OneToMany(mappedBy = "guest", cascade = CascadeType.ALL)
     List<Reservation> reservations = new ArrayList<>();

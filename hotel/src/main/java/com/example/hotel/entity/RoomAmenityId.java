@@ -2,7 +2,6 @@ package com.example.hotel.entity;
 
 import jakarta.persistence.Embeddable;
 
-
 import java.io.Serializable;
 
 @Embeddable
