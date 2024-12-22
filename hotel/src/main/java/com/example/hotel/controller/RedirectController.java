@@ -38,8 +38,4 @@ public class RedirectController {
         return "about";
     }
 
-    @GetMapping("/loginnn")
-    public String login(){
-        return "login";
-    }
 }

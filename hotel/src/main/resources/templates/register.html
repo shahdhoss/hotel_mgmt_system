@@ -147,7 +147,7 @@
                 </div>
                 <div class="col-md-6 mb-5 mb-md-0" data-aos="fade-up" data-aos-delay="100">
                   
-                  <form th:action="@{/register}" th:object="${guestDto}" method="post" >
+                  <form th:action="@{/register}" th:object="${registerGuestDto}" method="post" >
                     <div class="form-group">
                       <label for="firstname">First Name *</label>
                       <input type="text" class="form-control" id="firstname" th:field="*{firstName}">

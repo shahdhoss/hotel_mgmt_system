@@ -1,4 +1,4 @@
-package com.example.hotel.entity;
+package com.example.hotel.repository;
 
 import jakarta.persistence.Embeddable;
 

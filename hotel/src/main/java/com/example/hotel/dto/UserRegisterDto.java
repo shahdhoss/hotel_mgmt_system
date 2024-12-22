@@ -1,12 +1,8 @@
 package com.example.hotel.dto;
 
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Max;
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.*;
 
-public abstract class UserDto {
-
+public class UserRegisterDto {
     protected Long id;
     @NotEmpty
     protected String firstName;
@@ -16,7 +12,7 @@ public abstract class UserDto {
     @Email
     protected String emailAddress;
     @NotEmpty(message = "Password should not be empty")
-    @Min(6)
+    @Size(min= 6)
     protected String password;
 
     public @NotEmpty String getLastName() {

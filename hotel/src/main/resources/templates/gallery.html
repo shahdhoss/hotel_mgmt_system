@@ -5,7 +5,7 @@
 * License: https://creativecommons.org/licenses/by/3.0/
 */ -->
 <!doctype html>
-<html lang="en">
+<html xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
 
 <head>
   <meta charset="utf-8">
@@ -92,7 +92,8 @@
               <li><a href="/amenities">Amenities</a></li>
               <li class="active"><a href="gallery.html">Gallery</a></li>
               <li><a href="/about">About Us</a></li>
-              <li><a href="/login">Login</a></li>
+              <li><a sec:authorize ="isAuthenticated()" href="/logout">Log out</a></li>
+              <li><a sec:authorize ="isAnonymous()" href="/login">Login</a></li>
             </ul>
           </div>
           <div class="icons-wrap text-md-right">
@@ -253,8 +254,8 @@
                     <li><a href="/amenities">Amenities</a></li>
                     <li><a href="/gallery">Gallery</a></li>
                     <li><a href="/about">About Us</a></li>
-                    <li><a href="/login">Login</a></li>
-                  </ul>
+                    <li><a sec:authorize ="isAuthenticated()" href="/logout">Log out</a></li>
+                    <li><a sec:authorize ="isAnonymous()" href="/login">Login</a></li>                  </ul>
                 </div>
                 <div class="col-md-9 ml-auto">
                   <div class="row mb-3">

@@ -1,4 +1,4 @@
-package com.example.hotel.entity;
+package com.example.hotel.repository;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -42,7 +42,9 @@ public class Guest extends User{
     public String getEmailAddress() {
         return this.emailAddress;
     }
-
+    public Long getId(){
+        return this.id;
+    }
     public String getPassword() {
         return this.password;
     }
@@ -54,4 +56,5 @@ public class Guest extends User{
     public String getLastName() {
         return this.lastName;
     }
+
 }

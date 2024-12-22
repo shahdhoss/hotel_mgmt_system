@@ -1,8 +1,8 @@
 package com.example.hotel.service;
 
-import com.example.hotel.dto.UserDto;
+import com.example.hotel.dto.UserRegisterDto;
 
 public interface UserService {
-    void saveUser(UserDto userDto);
+    void saveUser(UserRegisterDto userDto);
 
 }
