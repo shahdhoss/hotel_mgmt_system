@@ -63,7 +63,8 @@ public class EventService {
                 event.getPerformer(),
                 event.getStartTime(),
                 event.getEndTime(),
-                event.getPrice()
+                event.getPrice(),
+                event.getImageURL()
         );
     }
 
@@ -75,6 +76,7 @@ public class EventService {
         event.setStartTime(eventDTO.getStartTime());
         event.setEndTime(eventDTO.getEndTime());
         event.setPrice(eventDTO.getPrice());
+        event.setImageURL(eventDTO.getImageURL());
         return event;
     }
 }

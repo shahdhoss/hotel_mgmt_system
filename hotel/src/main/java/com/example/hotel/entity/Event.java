@@ -28,15 +28,19 @@ public class Event {
     @Column(nullable = false)
     private Double price;
 
+    @Column(nullable = false)
+    private String imageURL;
+
     public Event() {}
 
-    public Event(String name, String description, String performer, LocalDateTime startTime, LocalDateTime endTime, Double price) {
+    public Event(String name, String description, String performer, LocalDateTime startTime, LocalDateTime endTime, Double price, String imageURL) {
         this.name = name;
         this.description = description;
         this.performer = performer;
         this.startTime = startTime;
         this.endTime = endTime;
         this.price = price;
+        this.imageURL = imageURL;
     }
 
     public Long getId() {
@@ -93,5 +97,13 @@ public class Event {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
+    }
+
+    public String getImageURL() {
+        return imageURL;
     }
 }

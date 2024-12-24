@@ -17,15 +17,18 @@ public class EventDTO {
 
     private Double price;
 
+    private String imageURL;
+
     public EventDTO() {}
 
-    public EventDTO(String name, String description, String performer, LocalDateTime startTime, LocalDateTime endTime, Double price) {
+    public EventDTO(String name, String description, String performer, LocalDateTime startTime, LocalDateTime endTime, Double price, String imageURL) {
         this.name = name;
         this.description = description;
         this.performer = performer;
         this.startTime = startTime;
         this.endTime = endTime;
         this.price = price;
+        this.imageURL = imageURL;
     }
 
     public Long getId() {
@@ -82,5 +85,13 @@ public class EventDTO {
 
     public void setPrice(Double price) {
         this.price = price;
+    }
+
+    public String getImageURL() {
+        return imageURL;
+    }
+
+    public void setImageURL(String imageURL) {
+        this.imageURL = imageURL;
     }
 }

@@ -4,12 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="add event table and functionality">
-      <change afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" afterDir="false" />
+    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="view events in front">
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/resources/static/images/events4.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/EventController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/EventController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/EventDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/EventDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/EventService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/amenities.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/amenities.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +70,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/hotel_mgmt_sys/hotel/src/main/java/com/example/hotel",
+    "last_opened_file_path": "C:/Users/malak/Downloads/demo/hotel_mgmt_system/hotel/src/main/resources/static/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,12 +85,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\malak\Downloads\demo\hotel_mgmt_system\hotel\src\main\resources\static\images" />
+      <recent name="C:\Users\malak\Downloads\demo\hotel_mgmt_system\hotel\src\main\resources\templates\images" />
       <recent name="F:\hotel_mgmt_sys\hotel\src\main\java\com\example\hotel" />
       <recent name="F:\hotel_mgmt_sys\hotel\src\main\resources\templates" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\malak\Downloads\demo\hotel_mgmt_system\hotel\src\main\resources\templates" />
       <recent name="C:\Users\malak\Downloads\demo\hotel_mgmt_system\hotel\src\main\resources\static" />
+      <recent name="C:\Users\malak\Downloads\demo\hotel_mgmt_system\hotel\src\main\resources\templates" />
       <recent name="F:\hotel_mgmt_sys\hotel\src\main\resources\templates" />
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs" />
       <recent name="F:\hotel_mgmt_sys" />
@@ -123,7 +130,7 @@
       <workItem from="1734950753918" duration="22000" />
       <workItem from="1734976458340" duration="3828000" />
       <workItem from="1735048699367" duration="33000" />
-      <workItem from="1735049309824" duration="4587000" />
+      <workItem from="1735049309824" duration="9922000" />
     </task>
     <task id="LOCAL-00001" summary="Book room usecase added">
       <option name="closed" value="true" />
@@ -181,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735051488080</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="view events in front">
+      <option name="closed" value="true" />
+      <created>1735054235668</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735054235668</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +221,7 @@
     <MESSAGE value="domail model" />
     <MESSAGE value="updated domail model" />
     <MESSAGE value="add event table and functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="add event table and functionality" />
+    <MESSAGE value="view events in front" />
+    <option name="LAST_COMMIT_MESSAGE" value="view events in front" />
   </component>
 </project>
