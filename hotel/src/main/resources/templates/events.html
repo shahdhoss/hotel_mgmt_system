@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Events</title>
+</head>
+<body>
+<h1>Upcoming Events</h1>
+<div th:each="event : ${events}">
+    <h2 th:text="${event.name}"></h2>
+    <p th:text="${event.description}"></p>
+    <p><strong>Performer:</strong> <span th:text="${event.performer}"></span></p>
+    <p><strong>Start Time:</strong> <span th:text="${event.startTime}"></span></p>
+    <p><strong>End Time:</strong> <span th:text="${event.endTime}"></span></p>
+    <p><strong>Price:</strong> <span th:text="${event.price}"></span></p>
+    <hr/>
+</div>
+</body>
+</html>

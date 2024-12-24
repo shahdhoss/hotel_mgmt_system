@@ -4,12 +4,14 @@ import com.example.hotel.dto.EventDTO;
 import com.example.hotel.service.EventService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
-@RequestMapping("/api/events")
+@Controller
+@RequestMapping("/events")
 public class EventController {
 
     private final EventService eventService;
@@ -19,9 +21,10 @@ public class EventController {
     }
 
     @GetMapping
-    public ResponseEntity<List<EventDTO>> getAllEvents() {
+    public String viewEventsPage(Model model) {
         List<EventDTO> events = eventService.getAllEvents();
-        return ResponseEntity.ok(events);
+        model.addAttribute("events", events);
+        return "events";
     }
 
     @GetMapping("/{id}")
