@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="view events in front">
-      <change afterPath="$PROJECT_DIR$/hotel/src/main/resources/static/images/events4.webp" afterDir="false" />
+    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="upcoming events page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/EventDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/EventDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Event.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/EventService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/EventService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/amenities.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/amenities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +121,7 @@
       <workItem from="1734950753918" duration="22000" />
       <workItem from="1734976458340" duration="3828000" />
       <workItem from="1735048699367" duration="33000" />
-      <workItem from="1735049309824" duration="9922000" />
+      <workItem from="1735049309824" duration="10688000" />
     </task>
     <task id="LOCAL-00001" summary="Book room usecase added">
       <option name="closed" value="true" />
@@ -196,7 +187,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735054235668</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="upcoming events page">
+      <option name="closed" value="true" />
+      <created>1735059734644</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735059734644</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +221,7 @@
     <MESSAGE value="updated domail model" />
     <MESSAGE value="add event table and functionality" />
     <MESSAGE value="view events in front" />
-    <option name="LAST_COMMIT_MESSAGE" value="view events in front" />
+    <MESSAGE value="upcoming events page" />
+    <option name="LAST_COMMIT_MESSAGE" value="upcoming events page" />
   </component>
 </project>
