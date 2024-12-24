@@ -5,32 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="updated domail model">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/RedirectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/GuestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/EventController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/EventDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/repository/EventRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/EventService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/GuestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/GuestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/testcontroller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Guest.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Guest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Room.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/RoomAmenityId.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/RoomAmenityId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Staff.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Staff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/GuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/GuestService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/amenities.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/amenities.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +22,7 @@
       <list>
         <option value="UML Use Case" />
         <option value="UML Sequence" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -70,28 +51,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HotelApplication.executor": "Run",
-    "DefaultPlantUmlFileTemplate": "UML Sequence",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/hotel_mgmt_sys/hotel/src/main/java/com/example/hotel",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.HotelApplication.executor&quot;: &quot;Run&quot;,
+    &quot;DefaultPlantUmlFileTemplate&quot;: &quot;UML Sequence&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HotelApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/hotel_mgmt_sys/hotel/src/main/java/com/example/hotel&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\hotel_mgmt_sys\hotel\src\main\java\com\example\hotel" />
@@ -105,6 +91,24 @@
       <recent name="F:\hotel_mgmt_sys\hotel_mgmt_sys\docs\SRS" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="HotelApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="hotel" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.hotel.HotelApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -116,6 +120,10 @@
       <workItem from="1729791469490" duration="7726000" />
       <workItem from="1730368894435" duration="1266000" />
       <workItem from="1732015476806" duration="3727000" />
+      <workItem from="1734950753918" duration="22000" />
+      <workItem from="1734976458340" duration="3828000" />
+      <workItem from="1735048699367" duration="33000" />
+      <workItem from="1735049309824" duration="2110000" />
     </task>
     <task id="LOCAL-00001" summary="Book room usecase added">
       <option name="closed" value="true" />
