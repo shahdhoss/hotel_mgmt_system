@@ -58,6 +58,7 @@ public class EventService {
 
     private EventDTO convertToDTO(Event event) {
         return new EventDTO(
+                event.getId(),
                 event.getName(),
                 event.getDescription(),
                 event.getPerformer(),

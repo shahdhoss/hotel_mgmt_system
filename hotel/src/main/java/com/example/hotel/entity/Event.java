@@ -33,7 +33,8 @@ public class Event {
 
     public Event() {}
 
-    public Event(String name, String description, String performer, LocalDateTime startTime, LocalDateTime endTime, Double price, String imageURL) {
+    public Event(Long id, String name, String description, String performer, LocalDateTime startTime, LocalDateTime endTime, Double price, String imageURL) {
+        this.id = id;
         this.name = name;
         this.description = description;
         this.performer = performer;

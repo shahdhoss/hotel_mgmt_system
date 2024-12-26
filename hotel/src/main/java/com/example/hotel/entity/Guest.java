@@ -14,6 +14,10 @@ public class Guest extends User {
 
     @OneToMany(mappedBy = "guest", cascade = CascadeType.ALL)
     List<Reservation> reservations = new ArrayList<>();
+
+    @OneToMany(mappedBy = "guest", cascade = CascadeType.ALL)
+    private List<EventBooking> eventBookings = new ArrayList<>();
+
     public Guest(){}
 
     public Guest(String emailAddress, String firstName, String lastName, String password){
@@ -57,4 +61,11 @@ public class Guest extends User {
         return this.lastName;
     }
 
+    public List<EventBooking> getEventBookings() {
+        return eventBookings;
+    }
+
+    public void setEventBookings(List<EventBooking> eventBookings) {
+        this.eventBookings = eventBookings;
+    }
 }
