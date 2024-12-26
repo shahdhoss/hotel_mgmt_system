@@ -18,24 +18,17 @@ public class RedirectController {
         return "home";
     }
 
-    @GetMapping("/rooms")
-    public String rooms(){
-        return "rooms";
-    }
-
     @GetMapping("/gallery")
     public String gallery(){
         return "gallery";
-    }
-
-    @GetMapping("/amenities")
-    public String amenities(){
-        return "amenities";
     }
 
     @GetMapping("/about")
     public String about(){
         return "about";
     }
-
+    @GetMapping("/details")
+    public String details(){
+        return "details";
+    }
 }

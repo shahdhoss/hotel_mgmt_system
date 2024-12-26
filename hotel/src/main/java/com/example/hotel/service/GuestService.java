@@ -2,9 +2,8 @@ package com.example.hotel.service;
 
 import com.example.hotel.dto.GuestRegisterDto;
 import com.example.hotel.dto.UserRegisterDto;
-import com.example.hotel.repository.Guest;
+import com.example.hotel.entity.Guest;
 import com.example.hotel.repository.GuestRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

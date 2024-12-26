@@ -1,4 +1,4 @@
-package com.example.hotel.repository;
+package com.example.hotel.entity;
 
 import jakarta.persistence.*;
 
@@ -8,7 +8,7 @@ import java.util.List;
 
 @Entity
 @Table(name="staff")
-public class Staff extends User{
+public class Staff extends User {
 
     @Column(nullable = false)
     private Long NationalId;

@@ -1,4 +1,4 @@
-package com.example.hotel.repository;
+package com.example.hotel.entity;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
@@ -10,7 +10,7 @@ import java.util.List;
 
 @Entity
 @Table(name = "guest")
-public class Guest extends User{
+public class Guest extends User {
 
     @OneToMany(mappedBy = "guest", cascade = CascadeType.ALL)
     List<Reservation> reservations = new ArrayList<>();

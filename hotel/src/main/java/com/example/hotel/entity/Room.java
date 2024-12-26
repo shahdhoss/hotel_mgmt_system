@@ -1,4 +1,4 @@
-package com.example.hotel.repository;
+package com.example.hotel.entity;
 
 import jakarta.persistence.*;
 
@@ -11,8 +11,10 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    private String name;
     private int pricePerNight;
-    private byte[] picture;
+    private String picture;
     private String description;
     private Boolean isRequestHousekeeping;
     private Boolean isRequestLaundry;
@@ -21,7 +23,7 @@ public class Room {
     List<RoomAmenity> roomAmenityList = new ArrayList<>();
 
     public Room(){}
-    public Room(int pricePerNight, byte[] picture, String description, Boolean isRequestHousekeeping, Boolean isRequestLaundry){
+    public Room(int pricePerNight,String picture, String description, Boolean isRequestHousekeeping, Boolean isRequestLaundry){
         setPricePerNight(pricePerNight);
         setPicture(picture);
         setDescription(description);
@@ -33,7 +35,7 @@ public class Room {
         return pricePerNight;
     }
 
-    public byte[] getPicture() {
+    public String getPicture() {
         return picture;
     }
 
@@ -57,7 +59,7 @@ public class Room {
         this.pricePerNight = pricePerNight;
     }
 
-    public void setPicture(byte[] picture) {
+    public void setPicture(String picture) {
         this.picture = picture;
     }
 
@@ -67,5 +69,17 @@ public class Room {
 
     public void setRequestLaundry(Boolean requestLaundry) {
         isRequestLaundry = requestLaundry;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Long getId() {
+        return id;
     }
 }
