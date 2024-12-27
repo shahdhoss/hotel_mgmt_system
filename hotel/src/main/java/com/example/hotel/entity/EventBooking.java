@@ -18,6 +18,10 @@ public class EventBooking {
     @JoinColumn(name = "guest_id", nullable = false)
     private Guest guest;
 
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "payment_id", referencedColumnName = "id")
+    private Payment payment;
+
     @Column(nullable = false)
     private int quantity;
 
@@ -26,11 +30,19 @@ public class EventBooking {
 
     public EventBooking() {}
 
-    public EventBooking(Event event, Guest guest, int quantity, LocalDateTime bookingDate) {
+    public EventBooking(Event event, Guest guest, Payment payment, int quantity, LocalDateTime bookingDate) {
+        this.event = event;
+        this.guest = guest;
+        this.payment = payment;
+        this.quantity = quantity;
+        this.bookingDate = bookingDate;
+    }
+
+    public EventBooking(Event event, Guest guest, int quantity, LocalDateTime now) {
         this.event = event;
         this.guest = guest;
         this.quantity = quantity;
-        this.bookingDate = bookingDate;
+        this.bookingDate = now;
     }
 
     public Long getId() {
@@ -55,6 +67,14 @@ public class EventBooking {
 
     public void setGuest(Guest guest) {
         this.guest = guest;
+    }
+
+    public Payment getPayment() {
+        return payment;
+    }
+
+    public void setPayment(Payment payment) {
+        this.payment = payment;
     }
 
     public int getQuantity() {

@@ -3,14 +3,17 @@ package com.example.hotel.service;
 import com.example.hotel.dto.EventBookingDTO;
 import com.example.hotel.dto.EventDTO;
 import com.example.hotel.dto.GuestDTO;
+import com.example.hotel.dto.PaymentDTO;
 import com.example.hotel.entity.Event;
 import com.example.hotel.entity.EventBooking;
 import com.example.hotel.entity.Guest;
+import com.example.hotel.service.ResourceNotFoundException;
 import com.example.hotel.repository.EventBookingRepository;
 import com.example.hotel.repository.EventRepository;
 import com.example.hotel.repository.GuestRepository;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.security.Principal;
 import java.time.LocalDateTime;
@@ -23,11 +26,16 @@ public class EventBookingService {
     private final EventBookingRepository eventBookingRepository;
     private final EventRepository eventRepository;
     private final GuestRepository guestRepository;
+    private final PaymentService paymentService;
 
-    public EventBookingService(EventBookingRepository eventBookingRepository, EventRepository eventRepository, GuestRepository guestRepository) {
+    public EventBookingService(EventBookingRepository eventBookingRepository,
+                               EventRepository eventRepository,
+                               GuestRepository guestRepository,
+                               PaymentService paymentService) {
         this.eventBookingRepository = eventBookingRepository;
         this.eventRepository = eventRepository;
         this.guestRepository = guestRepository;
+        this.paymentService = paymentService;
     }
 
     public List<EventBookingDTO> getAllBookings() {
@@ -43,24 +51,22 @@ public class EventBookingService {
         return convertToDTO(booking);
     }
 
-    public EventBookingDTO bookTickets(EventBookingDTO bookingDTO) {
+    @Transactional
+    public EventBookingDTO bookTickets(EventBookingDTO bookingDTO, PaymentDTO paymentDTO) {
         Event event = eventRepository.findById(bookingDTO.getEventId())
-                .orElseThrow(() -> new IllegalArgumentException("Event not found with id: " + bookingDTO.getEventId()));
-
+                .orElseThrow(() -> new IllegalArgumentException("Event not found with ID: " + bookingDTO.getEventId()));
         Guest guest = guestRepository.findById(bookingDTO.getGuestId())
-                .orElseThrow(() -> new IllegalArgumentException("Guest not found with id: " + bookingDTO.getGuestId()));
+                .orElseThrow(() -> new IllegalArgumentException("Guest not found with ID: " + bookingDTO.getGuestId()));
 
         EventBooking booking = new EventBooking(event, guest, bookingDTO.getQuantity(), LocalDateTime.now());
         EventBooking savedBooking = eventBookingRepository.save(booking);
 
-        return convertToDTO(savedBooking);
-    }
+        paymentDTO.setAmount(event.getPrice() * bookingDTO.getQuantity());
+        paymentDTO.setPaymentStatus("Paid");
+        paymentDTO.setPaymentDate(LocalDateTime.now());
+        paymentService.processPayment(paymentDTO);
 
-    public void cancelBooking(Long id) {
-        if (!eventBookingRepository.existsById(id)) {
-            throw new IllegalArgumentException("Booking not found with id: " + id);
-        }
-        eventBookingRepository.deleteById(id);
+        return convertToDTO(savedBooking);
     }
 
     private EventBookingDTO convertToDTO(EventBooking booking) {
@@ -74,7 +80,6 @@ public class EventBookingService {
                 booking.getEvent().getPrice(),
                 booking.getEvent().getImageURL()
         );
-        eventDTO.setId(booking.getEvent().getId());
 
         GuestDTO guestDTO = new GuestDTO(
                 booking.getGuest().getId(),
@@ -95,10 +100,9 @@ public class EventBookingService {
     }
 
     public Long getGuestIdByPrincipal(Principal principal) {
-        String email = principal.getName();
-        Guest guest = guestRepository.findByEmailAddress(email)
-                .orElseThrow(() -> new UsernameNotFoundException("Guest not found with email: " + email));
-        return guest.getId();
+        return guestRepository.findByEmailAddress(principal.getName())
+                .map(Guest::getId)
+                .orElseThrow(() -> new UsernameNotFoundException("Guest not found with email: " + principal.getName()));
     }
 
     public EventDTO getEventById(Long eventId) {

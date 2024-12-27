@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="add booking events tickets functionality">
+    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="enhance booking page styling">
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/PaymentDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/PaymentService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/EventBookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/EventBookingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/EventBookingDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/dto/EventBookingDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/EventBooking.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/entity/EventBooking.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/EventBookingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/EventBookingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/booking.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/booking.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/confirmation.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +144,7 @@
       <workItem from="1735154106377" duration="13472000" />
       <workItem from="1735172876916" duration="644000" />
       <workItem from="1735209440872" duration="7281000" />
-      <workItem from="1735234732486" duration="6539000" />
+      <workItem from="1735234732486" duration="20003000" />
     </task>
     <task id="LOCAL-00001" summary="Book room usecase added">
       <option name="closed" value="true" />
@@ -216,7 +226,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735236842562</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="enhance booking page styling">
+      <option name="closed" value="true" />
+      <created>1735241652003</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1735241652003</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +262,7 @@
     <MESSAGE value="view events in front" />
     <MESSAGE value="upcoming events page" />
     <MESSAGE value="add booking events tickets functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="add booking events tickets functionality" />
+    <MESSAGE value="enhance booking page styling" />
+    <option name="LAST_COMMIT_MESSAGE" value="enhance booking page styling" />
   </component>
 </project>

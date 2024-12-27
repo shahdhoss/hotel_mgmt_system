@@ -2,6 +2,7 @@ package com.example.hotel.controller;
 
 import com.example.hotel.dto.EventBookingDTO;
 import com.example.hotel.dto.EventDTO;
+import com.example.hotel.dto.PaymentDTO;
 import com.example.hotel.service.EventBookingService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -28,7 +29,16 @@ public class EventBookingController {
     }
 
     @PostMapping
-    public String bookTickets(@RequestParam Long eventId, @RequestParam int quantity, Principal principal, RedirectAttributes redirectAttributes) {
+    public String bookTickets(@RequestParam Long eventId,
+                              @RequestParam int quantity,
+                              Principal principal,
+                              RedirectAttributes redirectAttributes) {
+
+        if (principal == null) {
+            redirectAttributes.addFlashAttribute("error", "You must be logged in to book tickets.");
+            return "redirect:/login";
+        }
+
         Long guestId = bookingService.getGuestIdByPrincipal(principal);
 
         EventBookingDTO bookingDTO = new EventBookingDTO();
@@ -36,10 +46,16 @@ public class EventBookingController {
         bookingDTO.setGuestId(guestId);
         bookingDTO.setQuantity(quantity);
 
-        bookingService.bookTickets(bookingDTO);
+        PaymentDTO paymentDTO = new PaymentDTO();
+        paymentDTO.setGuestId(guestId);
+        paymentDTO.setAmount(0.0);
+        paymentDTO.setPaymentMethod("Credit Card");
+        paymentDTO.setPaymentStatus("Paid");
 
-        redirectAttributes.addAttribute("eventId", bookingDTO.getEventId());
+        bookingService.bookTickets(bookingDTO, paymentDTO);
+
+        redirectAttributes.addFlashAttribute("message", "Booking successful!");
         return "confirmation";
-
     }
+
 }

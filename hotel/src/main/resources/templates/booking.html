@@ -153,6 +153,14 @@
             0 2px 4px -1px rgba(0, 0, 0, 0.06);
         }
 
+        .btn-primary:disabled {
+            background-color: #d1d5db;
+            color: #6b7280;
+            border-color: #d1d5db;
+            cursor: not-allowed;
+            opacity: 0.7;
+        }
+
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -234,7 +242,14 @@
                             <input type="number" id="quantity" name="quantity" class="form-control" min="1" value="1" required/>
                         </div>
 
-                        <button type="submit" class="btn btn-primary">Book Tickets</button>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="checkbox" id="payWithCreditCard" />
+                            <label class="form-check-label" for="payWithCreditCard">
+                                Pay with my credit card
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="bookTicketsButton" disabled>Book Tickets</button>
                     </form>
 
                 </div>
@@ -243,5 +258,11 @@
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById("payWithCreditCard").addEventListener("change", function () {
+        const bookTicketsButton = document.getElementById("bookTicketsButton");
+        bookTicketsButton.disabled = !this.checked;
+    });
+</script>
 </body>
 </html>
