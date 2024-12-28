@@ -1,0 +1,241 @@
+@startuml
+abstract class User {
+    +id: int
+    +firstName: String
+    +lastName: String
+    +emailAddress: String
+    +password: String
+    --
+    +User(id: int, firstName: String, lastName: String, emailAddress: String, password: String)
+    +getId(): int
+    +setId(id: int): void
+    +getFirstName(): String
+    +setFirstName(firstName: String): void
+    +getLastName(): String
+    +setLastName(lastName: String): void
+    +getEmailAddress(): String
+    +setEmailAddress(emailAddress: String): void
+    +getPassword(): String
+    +setPassword(password: String): void
+}
+
+class Guest {
+    +eventBookings: List<EventBooking>
+    +reservations: List<Reservation>
+    --
+    +Guest(...)
+    +getEventBookings(): List<EventBooking>
+    +setEventBookings(eventBookings: List<EventBooking>): void
+    +getReservations(): List<Reservation>
+    +setReservations(reservations: List<Reservation>): void
+}
+
+class Staff {
+    +nationalId: String
+    +jobTitle: String
+    +startDay: Date
+    +lastWorkingDay: Date
+    +paychecks: List<Paycheck>
+    --
+    +Staff(...)
+    +getNationalId(): String
+    +setNationalId(nationalId: String): void
+    +getJobTitle(): String
+    +setJobTitle(jobTitle: String): void
+    +getStartDay(): Date
+    +setStartDay(startDay: Date): void
+    +getLastWorkingDay(): Date
+    +setLastWorkingDay(lastWorkingDay: Date): void
+    +getPaychecks(): List<Paycheck>
+    +setPaychecks(paychecks: List<Paycheck>): void
+}
+
+class Event {
+    +id: int
+    +name: String
+    +description: String
+    +performer: String
+    +startTime: Date
+    +endTime: Date
+    +price: double
+    +imageURL: String
+    --
+    +Event(...)
+    +getId(): int
+    +setId(id: int): void
+    +getName(): String
+    +setName(name: String): void
+    +getDescription(): String
+    +setDescription(description: String): void
+    +getPerformer(): String
+    +setPerformer(performer: String): void
+    +getStartTime(): Date
+    +setStartTime(startTime: Date): void
+    +getEndTime(): Date
+    +setEndTime(endTime: Date): void
+    +getPrice(): double
+    +setPrice(price: double): void
+    +getImageURL(): String
+    +setImageURL(imageURL: String): void
+}
+
+class EventBooking {
+    +id: int
+    +quantity: int
+    +bookingDate: Date
+    +event: Event
+    +guest: Guest
+    +payment: Payment
+    --
+    +EventBooking(...)
+    +getId(): int
+    +setId(id: int): void
+    +getQuantity(): int
+    +setQuantity(quantity: int): void
+    +getBookingDate(): Date
+    +setBookingDate(bookingDate: Date): void
+    +getEvent(): Event
+    +setEvent(event: Event): void
+    +getGuest(): Guest
+    +setGuest(guest: Guest): void
+    +getPayment(): Payment
+    +setPayment(payment: Payment): void
+}
+
+class Paycheck {
+    +paycheckId: PaycheckId
+    +amount: double
+    +payDate: Date
+    +staff: Staff
+    --
+    +Paycheck(...)
+    +getPaycheckId(): PaycheckId
+    +setPaycheckId(paycheckId: PaycheckId): void
+    +getAmount(): double
+    +setAmount(amount: double): void
+    +getPayDate(): Date
+    +setPayDate(payDate: Date): void
+    +getStaff(): Staff
+    +setStaff(staff: Staff): void
+}
+
+
+class PaycheckId {
+    +id: int
+    +staffId: int
+}
+
+class Payment {
+    +id: int
+    +guestId: int
+    +amount: double
+    +paymentMethod: String
+    +paymentStatus: String
+    +paymentDate: Date
+    --
+    +Payment(...)
+    +getId(): int
+    +setId(id: int): void
+    +getGuestId(): int
+    +setGuestId(guestId: int): void
+    +getAmount(): double
+    +setAmount(amount: double): void
+    +getPaymentMethod(): String
+    +setPaymentMethod(paymentMethod: String): void
+    +getPaymentStatus(): String
+    +setPaymentStatus(paymentStatus: String): void
+    +getPaymentDate(): Date
+    +setPaymentDate(paymentDate: Date): void
+}
+
+class Reservation {
+    +reservationId: ReservationId
+    +paymentAmount: double
+    +paymentMethod: String
+    +guest: Guest
+    +room: Room
+    --
+    +Reservation(...)
+    +getReservationId(): ReservationId
+    +setReservationId(reservationId: ReservationId): void
+    +getPaymentAmount(): double
+    +setPaymentAmount(paymentAmount: double): void
+    +getPaymentMethod(): String
+    +setPaymentMethod(paymentMethod: String): void
+    +getGuest(): Guest
+    +setGuest(guest: Guest): void
+    +getRoom(): Room
+    +setRoom(room: Room): void
+}
+
+class ReservationId {
+    +id: int
+    +guestId: int
+    +roomId: int
+}
+
+class Room {
+    +id: int
+    +name: String
+    +pricePerNight: double
+    +picture: String
+    +description: String
+    +isRequestHousekeeping: boolean
+    +isRequestLaundry: boolean
+    +roomAmenities: List<RoomAmenity>
+    --
+    +Room(...)
+    +getId(): int
+    +setId(id: int): void
+    +getName(): String
+    +setName(name: String): void
+    +getPricePerNight(): double
+    +setPricePerNight(pricePerNight: double): void
+    +getPicture(): String
+    +setPicture(picture: String): void
+    +getDescription(): String
+    +setDescription(description: String): void
+    +getIsRequestHousekeeping(): boolean
+    +setIsRequestHousekeeping(isRequestHousekeeping: boolean): void
+    +getIsRequestLaundry(): boolean
+    +setIsRequestLaundry(isRequestLaundry: boolean): void
+    +getRoomAmenities(): List<RoomAmenity>
+    +setRoomAmenities(roomAmenities: List<RoomAmenity>): void
+}
+
+class RoomAmenity {
+    +roomAmenityId: RoomAmenityId
+    +amenity: String
+    +room: Room
+    --
+    +RoomAmenity(...)
+    +getRoomAmenityId(): RoomAmenityId
+    +setRoomAmenityId(roomAmenityId: RoomAmenityId): void
+    +getAmenity(): String
+    +setAmenity(amenity: String): void
+    +getRoom(): Room
+    +setRoom(room: Room): void
+}
+
+class RoomAmenityId {
+    +id: int
+    +roomId: int
+}
+
+User <|-- Guest
+User <|-- Staff
+Guest --> "1..*" EventBooking : "has"
+Guest --> "1..*" Reservation : "makes"
+Staff --> "1..*" Paycheck : "receives"
+EventBooking --> "1" Event : "for"
+EventBooking --> "1" Guest : "made by"
+EventBooking --> "1" Payment : "paid with"
+Reservation --> "1" Guest : "belongs to"
+Reservation --> "1" ReservationId : "has"
+Reservation --> "1" Room : "for"
+Room --> "1..*" RoomAmenity : "has"
+RoomAmenity --> "1" Room : "belongs to"
+RoomAmenity --> "1" RoomAmenityId : "has"
+Paycheck --> "1" Staff : "for"
+Paycheck --> "1" PaycheckId : "has"
+@enduml
