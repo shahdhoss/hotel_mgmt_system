@@ -1,0 +1,37 @@
+@startuml
+[*] --> LoginScreen : Start Application
+
+LoginScreen : User logs into the system
+LoginScreen --> Home : Successful Login
+LoginScreen --> LoginScreen : Invalid Credentials
+
+Home : Main hub for navigation
+Home --> HotelEventsPage : View Hotel Events
+Home --> BookingPage : Manage Bookings
+Home --> [*] : Logout
+
+HotelEventsPage : Displays available events
+HotelEventsPage --> EventDetailsPage : Select Event
+HotelEventsPage --> Home : Back to Home
+
+EventDetailsPage : View event details
+EventDetailsPage --> TicketBookingPage : Buy Ticket
+EventDetailsPage --> HotelEventsPage : Back to Events List
+
+TicketBookingPage : Enter ticket quantity & payment details
+TicketBookingPage --> PaymentProcessing : Confirm Payment
+TicketBookingPage --> EventDetailsPage : Cancel
+TicketBookingPage --> ErrorState : Missing Required Fields
+
+PaymentProcessing : Processing payment
+PaymentProcessing --> ConfirmationPage : Payment Successful
+PaymentProcessing --> ErrorState : Payment Failed
+
+ErrorState : Error encountered (e.g., payment failure)
+ErrorState --> TicketBookingPage : Retry
+ErrorState --> Home : Cancel & Return to Home
+
+ConfirmationPage : Displays success message
+ConfirmationPage --> Home : Return to Home
+
+@enduml
