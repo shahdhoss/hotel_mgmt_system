@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="payment functionality for event tickets">
-      <change afterPath="$PROJECT_DIR$/hotel/class_diagram/class.puml" afterDir="false" />
+    <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="class diagram">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +135,7 @@
       <workItem from="1735154106377" duration="13472000" />
       <workItem from="1735172876916" duration="644000" />
       <workItem from="1735209440872" duration="7281000" />
-      <workItem from="1735234732486" duration="24855000" />
+      <workItem from="1735234732486" duration="25619000" />
     </task>
     <task id="LOCAL-00001" summary="Book room usecase added">
       <option name="closed" value="true" />
@@ -234,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735328203564</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="class diagram">
+      <option name="closed" value="true" />
+      <created>1735393696152</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1735393696152</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +271,7 @@
     <MESSAGE value="add booking events tickets functionality" />
     <MESSAGE value="enhance booking page styling" />
     <MESSAGE value="payment functionality for event tickets" />
-    <option name="LAST_COMMIT_MESSAGE" value="payment functionality for event tickets" />
+    <MESSAGE value="class diagram" />
+    <option name="LAST_COMMIT_MESSAGE" value="class diagram" />
   </component>
 </project>
