@@ -17,11 +17,19 @@ import java.util.Optional;
 public class GuestService implements UserService, UserDetailsService {
 
     private final GuestRepository guestRepository;
-    private final PasswordEncoder passwordEncoder;
+    private final PasswordEncoder passwordEncoder = new PasswordEncoder() {
+        @Override
+        public String encode(CharSequence rawPassword) {
+            return null;
+        }
 
-    public GuestService(GuestRepository guestRepository, PasswordEncoder passwordEncoder){
+        @Override
+        public boolean matches(CharSequence rawPassword, String encodedPassword) {
+            return false;
+        }
+    };
+    public GuestService(GuestRepository guestRepository){
         this.guestRepository=guestRepository;
-        this.passwordEncoder = passwordEncoder;
     }
 
     public void saveUser(UserRegisterDto userDto) {
@@ -33,6 +41,14 @@ public class GuestService implements UserService, UserDetailsService {
             guest.setPassword(passwordEncoder.encode(guestDto.getPassword()));
             guestRepository.save(guest);
         }
+    }
+    public Guest getGuest(Long id){
+        Optional<Guest> guestOptional= guestRepository.findById(id);
+        if(guestOptional.isPresent()){
+            Guest guest = guestOptional.get();
+            return guest;
+        }
+        return null;
     }
 
     @Override
