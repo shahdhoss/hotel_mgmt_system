@@ -1,0 +1,23 @@
+@startuml
+actor Guest
+participant Frontend
+participant RoomService
+participant Database
+
+Guest -> Frontend: viewRooms()
+Frontend -> RoomService: getAllRooms()
+RoomService -> Database: query()
+
+alt Rooms Available
+    Database --> RoomService: roomsData
+    RoomService --> Frontend: roomDetails
+
+    Guest -> Frontend: selectRoom(roomId)
+    Frontend -> RoomService: showRoom(roomId)
+
+else Rooms Not Available
+    Database --> RoomService: notFound
+    RoomService --> Frontend: noRooms
+    Frontend --> Guest: showNoAvailability
+end
+@enduml

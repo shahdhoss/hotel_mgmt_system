@@ -39,7 +39,7 @@ public class RoomController {
     }
     @GetMapping("/roombooking/{roomid}")
     public String showBookingForm(@PathVariable Long roomid, Model model) {
-        Room room=roomService.getRoom(roomid);
+        Room room = roomService.getRoom(roomid);
         model.addAttribute("roomDTO", room);
         model.addAttribute("roomId", roomid);
         model.addAttribute("roomBookingdto", new RoomBookingDTO());

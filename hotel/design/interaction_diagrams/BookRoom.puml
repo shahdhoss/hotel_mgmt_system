@@ -1,0 +1,40 @@
+@startuml
+actor Guest
+participant Frontend
+participant BookingService
+participant RoomService
+participant PaymentService
+participant Database
+
+Guest -> Frontend: requestRoom(dates)
+Frontend -> RoomService: checkAvailability(dates)
+RoomService -> Database: query()
+
+alt Room Available
+    Database --> RoomService: roomData
+    RoomService --> Frontend: roomDetails
+    Frontend --> Guest: showRoomOptions
+
+    Guest -> Frontend: selectRoom(roomId)
+    Frontend -> BookingService: initBooking(roomId)
+
+    Guest -> Frontend: submitPayment(details)
+    Frontend -> PaymentService: process(amount)
+
+    alt Payment Success
+        PaymentService --> BookingService: confirmed
+        BookingService -> Database: createBooking()
+        Database --> BookingService: confirmed
+        BookingService --> Frontend: bookingId
+        Frontend --> Guest: confirmation
+    else Payment Failed
+        PaymentService --> Frontend: error
+        Frontend --> Guest: paymentError
+    end
+
+else Room Not Available
+    Database --> RoomService: notFound
+    RoomService --> Frontend: noRooms
+    Frontend --> Guest: showNoAvailability
+end
+@enduml
