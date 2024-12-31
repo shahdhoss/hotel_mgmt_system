@@ -68,6 +68,7 @@
               <li class="active"><a href="gallery.html">Gallery</a></li>
               <li><a href="/about">About Us</a></li>
               <li><a th:href="@{/events}">Events</a></li>
+              <li><a th:href="@{/request}">Services</a></li>
               <li><a sec:authorize ="isAuthenticated()" href="/logout">Log out</a></li>
               <li><a sec:authorize ="isAnonymous()" href="/login">Login</a></li>
             </ul>
