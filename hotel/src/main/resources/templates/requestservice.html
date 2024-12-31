@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Housekeeping</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --hover-color: #1d4ed8;
+            --text-primary: #1f2937;
+            --text-secondary: #4b5563;
+        }
+
+        body {
+            background-color: #f3f4f6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            border-radius: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            background: white;
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 100;
+            background: white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: none;
+            color: var(--text-primary);
+            text-decoration: none;
+            opacity: 0;
+            animation: fadeInDown 0.5s ease 0.2s forwards;
+        }
+
+        .back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .back-button i {
+            font-size: 1.2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .back-button:hover i {
+            transform: translateX(-3px);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+            0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .card img {
+            border-radius: 20px 0 0 20px;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover img {
+            transform: scale(1.05);
+        }
+
+        .card-body {
+            padding: 2.5rem;
+        }
+
+        .card-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+            opacity: 0;
+            animation: fadeInDown 0.5s ease forwards;
+        }
+
+        .card-text {
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInUp 0.5s ease 0.2s forwards;
+        }
+
+        .form-control {
+            border-radius: 10px;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 10px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.5s ease 0.6s forwards;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--hover-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="card animate__animated animate__fadeInUp">
+    <a href="javascript:history.back()" class="back-button"><i class="fas fa-arrow-left"></i></a>
+    <div class="card-body">
+        <h2 class="card-title">Request Housekeeping</h2>
+        <p class="card-text">Please provide your details to request housekeeping services.</p>
+        <form th:action="@{/request}" method="POST" th:object="${serviceDTO}">
+            <div class="mb-3">
+                <label for="roomId" class="form-label">Room Number</label>
+                <input type="text" class="form-control" th:field="*{roomId}" id="roomId" placeholder="Enter your room number" required>
+            </div>
+            <div class="mb-3">
+                <label for="serviceType" class="form-label">Service Type</label>
+                <select class="form-control" th:field="*{service}" id="serviceType" required>
+                    <option value="cleaning">Cleaning</option>
+                    <option value="freshTowels">Fresh Towels</option>
+                    <option value="laundry">Laundry</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="additionalRequest" class="form-label">Additional Requests</label>
+                <textarea th:field="*{comment}" class="form-control" id="additionalRequest" rows="3" placeholder="Any additional requests?" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
