@@ -10,29 +10,29 @@ import java.time.LocalDate;
 public class ReservationId implements Serializable {
     private Long guestId;
     private Long roomId;
-    private LocalDate start_date;
-    private LocalDate end_date;
+    private LocalDate startdate;
+    private LocalDate enddate;
     public ReservationId(Long roomId, Long guestId, LocalDate start_date, LocalDate end_date){
         this.roomId=roomId;
         this.guestId=guestId;
-        this.start_date=start_date;
-        this.end_date=end_date;
+        this.startdate=start_date;
+        this.enddate=end_date;
     }
     public ReservationId() {}
 
     public LocalDate getEnd_date() {
-        return end_date;
+        return enddate;
     }
 
     public LocalDate getStart_date() {
-        return start_date;
+        return startdate;
     }
 
     public void setEnd_date(LocalDate end_date) {
-        this.end_date = end_date;
+        this.enddate = end_date;
     }
 
     public void setStart_date(LocalDate start_date) {
-        this.start_date = start_date;
+        this.startdate = start_date;
     }
 }

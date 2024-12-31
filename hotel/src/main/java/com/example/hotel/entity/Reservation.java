@@ -1,9 +1,11 @@
 package com.example.hotel.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
-
+@JsonIgnoreProperties({"room", "guest"})
 @Entity
 @Table(name = "reservation")
 public class Reservation {
@@ -12,7 +14,6 @@ public class Reservation {
     @ManyToOne
     @JoinColumn(name = "roomId", insertable = false, updatable = false)
     private Room room;
-
     @ManyToOne
     @JoinColumn(name = "guestId", insertable = false, updatable = false)
     private Guest guest;
@@ -57,6 +58,5 @@ public class Reservation {
     public void setReservationId(ReservationId reservationId) {
         this.reservationId = reservationId;
     }
-
 
 }

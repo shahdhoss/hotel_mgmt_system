@@ -4,8 +4,10 @@ import com.example.hotel.entity.Reservation;
 import com.example.hotel.entity.ReservationId;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface ReservationRepository extends JpaRepository<Reservation, ReservationId> {
     List<Reservation> findAllByRoomId(Long roomid);
+    List<Reservation> findByRoomId(Long roomId);
 }
