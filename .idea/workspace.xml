@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="interaction diagram for book event ticket">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/confirmation.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/requestservice.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/requestservice.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hotel/design/state_diagrams/book_room.puml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
