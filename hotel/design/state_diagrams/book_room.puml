@@ -1,0 +1,37 @@
+@startuml
+[*] --> LoginScreen : Start Application
+
+LoginScreen : User logs into the system
+LoginScreen --> Home : Successful Login
+LoginScreen --> LoginScreen : Invalid Credentials
+
+Home : Main hub for navigation
+Home --> HotelRoomsPage : View Hotel Rooms
+Home --> BookingPage : Manage Bookings
+Home --> [*] : Logout
+
+HotelRoomsPage : Displays available rooms
+HotelRoomsPage --> RoomDetailsPage : Select Room
+HotelRoomsPage --> Home : Back to Home
+
+RoomDetailsPage : View room details
+RoomDetailsPage --> ReservationBookingPage : Buy Ticket
+RoomDetailsPage --> HotelRoomsPage : Back to Rooms List
+
+ReservationBookingPage : Enter reservation duration & payment details
+ReservationBookingPage --> PaymentProcessing : Confirm Payment
+ReservationBookingPage --> RoomDetailsPage : Cancel
+ReservationBookingPage --> ErrorState : Missing Required Fields
+
+PaymentProcessing : Processing payment
+PaymentProcessing --> ConfirmationPage : Payment Successful
+PaymentProcessing --> ErrorState : Payment Failed
+
+ErrorState : Error encountered (e.g., payment failure)
+ErrorState --> ReservationBookingPage : Retry
+ErrorState --> Home : Cancel & Return to Home
+
+ConfirmationPage : Displays success message
+ConfirmationPage --> Home : Return to Home
+
+@enduml
