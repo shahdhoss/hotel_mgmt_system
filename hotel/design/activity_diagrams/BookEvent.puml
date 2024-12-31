@@ -1,0 +1,27 @@
+@startuml
+|User|
+start
+:Login to system;
+if (Valid credentials?) then (yes)
+  :Go to Event Booking section;
+  :View available events;
+  if (Choose an event?) then (yes)
+    :Select event and date;
+    :Enter booking details (number of tickets, special requests);
+    :Proceed to payment;
+    if (Payment successful?) then (yes)
+      :Receive booking confirmation;
+      stop
+    else (no)
+      :Show payment failure;
+      stop
+    endif
+  else (no)
+    :Cancel event booking;
+    stop
+  endif
+else (no)
+  :Show invalid credentials message;
+  stop
+endif
+@enduml

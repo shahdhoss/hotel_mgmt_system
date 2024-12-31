@@ -1,0 +1,26 @@
+@startuml
+|User|
+start
+:Login to system;
+if (Valid credentials?) then (yes)
+  :Go to Dashboard;
+  :View available rooms;
+  if (Choose a room?) then (yes)
+    :Select room and dates;
+    :Proceed to payment;
+    if (Payment successful?) then (yes)
+      :Receive booking confirmation;
+      stop
+    else (no)
+      :Show payment failure;
+      stop
+    endif
+  else (no)
+    :Cancel booking;
+    stop
+  endif
+else (no)
+  :Show invalid credentials message;
+  stop
+endif
+@enduml

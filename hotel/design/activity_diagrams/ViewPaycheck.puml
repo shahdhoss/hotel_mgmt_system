@@ -1,0 +1,22 @@
+@startuml
+|Staff Member|
+start
+:Login to system;
+if (Valid credentials?) then (yes)
+  :Go to Paycheck section;
+  :View paycheck history;
+  if (Select paycheck to view?) then (yes)
+    :Select a specific paycheck;
+    :Display paycheck details;
+    :View deductions and bonuses;
+    :Confirm paycheck details;
+    stop
+  else (no)
+    :Cancel paycheck view;
+    stop
+  endif
+else (no)
+  :Show invalid credentials message;
+  stop
+endif
+@enduml

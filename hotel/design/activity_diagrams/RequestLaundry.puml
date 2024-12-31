@@ -1,0 +1,29 @@
+@startuml
+|User|
+start
+:Login to system;
+if (Valid credentials?) then (yes)
+  :Go to Laundry Request section;
+  :View available laundry services;
+  if (Select laundry service?) then (yes)
+    :Choose laundry service;
+    :Enter laundry details (quantity, special requests);
+    :Confirm laundry request;
+    :Proceed to payment;
+    if (Payment successful?) then (yes)
+      :Receive laundry confirmation;
+      :Laundry request is processed;
+      stop
+    else (no)
+      :Show payment failure;
+      stop
+    endif
+  else (no)
+    :Cancel laundry request;
+    stop
+  endif
+else (no)
+  :Show invalid credentials message;
+  stop
+endif
+@enduml
