@@ -43,21 +43,15 @@ public class StaffService {
     public Staff viewEmploymentStatus(Long id){
         Optional<Staff> staffOptional =  staffRepository.findById(id);
         if(staffOptional.isPresent()){
-            Staff staff=staffOptional.get();
+            Staff staff = staffOptional.get();
             return staff;
         }
         return null;
     }
     public List<Paycheck> viewPaychecks(Long staffId) {
-        Optional<Staff> staffOptional = staffRepository.findById(staffId);
-        if (staffOptional.isPresent()) {
-            Staff staff = staffOptional.get();
-            Optional<List<Paycheck>> paycheckOptional = paycheckRepository.findAllByStaffId(staffId);
-            if (paycheckOptional.isPresent()) {
+        Optional<List<Paycheck>> paycheckOptional = paycheckRepository.findAllByStaffId(staffId);
+        if (paycheckOptional.isPresent()) {
                 return paycheckOptional.get();
-            } else {
-                return null;
-            }
         }
         return null;
     }
