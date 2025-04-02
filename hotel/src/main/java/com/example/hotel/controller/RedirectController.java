@@ -18,11 +18,6 @@ public class RedirectController {
         return "home";
     }
 
-    @GetMapping("/gallery")
-    public String gallery(){
-        return "gallery";
-    }
-
     @GetMapping("/about")
     public String about(){
         return "about";

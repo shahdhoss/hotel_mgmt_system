@@ -8,6 +8,7 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -17,17 +18,7 @@ import java.util.Optional;
 public class GuestService implements UserService, UserDetailsService {
 
     private final GuestRepository guestRepository;
-    private final PasswordEncoder passwordEncoder = new PasswordEncoder() {
-        @Override
-        public String encode(CharSequence rawPassword) {
-            return null;
-        }
-
-        @Override
-        public boolean matches(CharSequence rawPassword, String encodedPassword) {
-            return false;
-        }
-    };
+    private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     public GuestService(GuestRepository guestRepository){
         this.guestRepository=guestRepository;
     }
@@ -39,6 +30,7 @@ public class GuestService implements UserService, UserDetailsService {
             guest.setLastName(guestDto.getLastName());
             guest.setEmailAddress(guestDto.getEmailAddress());
             guest.setPassword(passwordEncoder.encode(guestDto.getPassword()));
+//            guest.setPassword(guestDto.getPassword());
             guestRepository.save(guest);
         }
     }

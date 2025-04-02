@@ -62,8 +62,6 @@
             <ul class="site-nav-ul js-clone-nav">
               <li class="active"><a href="/home">Home</a></li>
               <li class="has-children"><a href="/rooms">Rooms</a></li>
-              <li><a th:href="@{/gallery}">Gallery</a></li>
-              <li><a th:href="@{/about}">About Us</a></li>
               <li><a th:href="@{/events}">Events</a></li>
               <li><a th:href="@{/request}">Services</a></li>
               <li><a sec:authorize ="isAuthenticated()" th:href="@{/logout}">Log out</a></li>
@@ -174,7 +172,6 @@
                 <h2 class="suite-title">King Bedroom</h2>
                 <div class="suite-excerpt">
                   <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger.</p>
-                  <p><a href="#" class="readmore">Room Details</a></p>
                 </div>
               </div>
             </div>
@@ -198,7 +195,6 @@
                 <h2 class="suite-title">Queen &amp; Double Bedroom</h2>
                 <div class="suite-excerpt pr-5">
                   <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality mattress in a small room to large suites with bigger</p>
-                  <p><a href="#" class="readmore">Room Details</a></p>
                 </div>
               </div>
 
@@ -223,8 +219,6 @@
                     <img src="/css/images/svg/parking.svg" alt="Image" class="img-fluid">
                   </div>
                   <h3>Free Self-Parking</h3>
-                  <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
-                  <p><p><a href="#" class="readmore reverse">Read More</a></p></p>
                 </div>
               </div>
               
@@ -234,8 +228,6 @@
                     <img src="/css/images/svg/internet.svg" alt="Image" class="img-fluid">
                   </div>
                   <h3>High speed Internet access</h3>
-                  <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
-                  <p><p><a href="#" class="readmore reverse">Read More</a></p></p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="100">
@@ -244,8 +236,6 @@
                     <img src="/css/images/svg/wifi.svg" alt="Image" class="img-fluid">
                   </div>
                   <h3>Complimentary WiFi in public areas</h3>
-                  <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
-                  <p><p><a href="#" class="readmore reverse">Read More</a></p></p>
                 </div>
               </div>
               
@@ -255,8 +245,6 @@
                     <img src="/css/images/svg/elevator.svg" alt="Image" class="img-fluid">
                   </div>
                   <h3>Elevators</h3>
-                  <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
-                  <p><p><a href="#" class="readmore reverse">Read More</a></p></p>
                 </div>
               </div>
               
@@ -267,8 +255,6 @@
                   </div>
 
                   <h3>Meeting rooms</h3>
-                  <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
-                  <p><p><a href="#" class="readmore reverse">Read More</a></p></p>
                 </div>
               </div>
               <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-up" data-aos-delay="200">
@@ -277,8 +263,6 @@
                     <img th:src="@{/css/images/svg/washing-machine.svg}" alt="Image" class="img-fluid">
                   </div>
                   <h3>Laundry and Valet service</h3>
-                  <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
-                  <p><p><a href="#" class="readmore reverse">Read More</a></p></p>
                 </div>
               </div>
 
@@ -304,8 +288,6 @@
           <div class="row">
             <div class="col-md-4 pr-md-5">
               <h3>About Us</h3>
-              <p>A hotel is an establishment that provides paid lodging on a short-term basis. Facilities provided may range from a modest-quality.</p>
-              <p><a href="#" class="readmore">Read more</a></p>
             </div>
             <div class="col-md-8 ml-auto">
               <div class="row">
@@ -314,8 +296,6 @@
                   <ul class="list-unstyled">
                     <li><a href="/home">Home</a></li>
                     <li><a href="/rooms">Rooms</a></li>
-                    <li><a href="/gallery">Gallery</a></li>
-                    <li><a href="/about">About Us</a></li>
                     <li><a sec:authorize ="isAuthenticated()" th:href="@{/home}">Log out</a></li>
                     <li><a sec:authorize ="isAnonymous()" href="/login" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">Login</a></li>
                   </ul>

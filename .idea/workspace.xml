@@ -6,8 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="d5a209b9-a5a3-4d8a-8609-a77e0b1acbf8" name="Changes" comment="interaction diagram for book event ticket">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/StaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/StaffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/RedirectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/controller/RedirectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/GuestService.java" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/java/com/example/hotel/service/GuestService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/confirmation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/events.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/gallery.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" beforeDir="false" afterPath="$PROJECT_DIR$/hotel/src/main/resources/templates/rooms.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +81,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/hotel_mgmt_sys/hotel/src/main/resources/static/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/hotel_mgmt_sys&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -140,7 +149,16 @@
       <workItem from="1735575684160" duration="8820000" />
       <workItem from="1735614492095" duration="1629000" />
       <workItem from="1735619293912" duration="7391000" />
-      <workItem from="1735651455344" duration="1292000" />
+      <workItem from="1735651455344" duration="1707000" />
+      <workItem from="1735737582079" duration="640000" />
+      <workItem from="1735752315125" duration="6000" />
+      <workItem from="1735752414983" duration="2737000" />
+      <workItem from="1737724178466" duration="524000" />
+      <workItem from="1740141938727" duration="98000" />
+      <workItem from="1741642339441" duration="1568000" />
+      <workItem from="1743622476286" duration="1412000" />
+      <workItem from="1743624037720" duration="338000" />
+      <workItem from="1743624607274" duration="1949000" />
     </task>
     <task id="LOCAL-00001" summary="Book room usecase added">
       <option name="closed" value="true" />
